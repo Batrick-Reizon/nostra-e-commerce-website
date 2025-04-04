@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Collections</title>
+</head>
+
+<body class="font-serif">
+
+    <div id="close" class="bg-black text-white p-3 text-xs sm:text-xl flex justify-evenly items-center">
+        <p>Sign Up and <b>GEt 20% OFF</b> for your first Order</p>
+        <i id="exitbutton" class="fa-solid fa-xmark cursor-pointer"></i>
+    </div>
+
+
+    <!-- creating navbar inside that creating h1 tag and ul tag inside ul tag creating li tag list as home,new arrival,most wanted,collections,contact us -->
+    <nav class="flex justify-between pl-5 p-2 sm:p-3 md:p-4 lg:p-5 items-center sticky top-0 bg-white z-20">
+        <h1 class="text-2xl font-black">Nostra</h1>
+        <svg id="menubar" class="md:hidden flex cursor-pointer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="15" height="15" viewBox="0 0 50 50">
+            <path
+                d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+            </path>
+        </svg>
+        <ul class="hidden md:flex gap-20 items-center md:text-lg pr-10">
+            <li><a class="hover:underline cursor-pointer" href="./index.html">Home</a></li>
+            <li><a class="hover:underline cursor-pointer" href="./collection.html">Collections</a></li>
+            <li><a class="hover:underline cursor-pointer" href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- creating sidebar section -->
+    <section id="sidebar" class="bg-black md:hidden fixed z-20 top-0 transition-all duration-1000"
+        style="height: 100vh; width: 50%; left: -50%;">
+        <div class="text-right p-10">
+            <i id="cancel" class="fa-solid fa-xmark hover:text-red-700 cursor-pointer text-white"></i>
+        </div>
+        <ul class=" flex flex-col gap-10 items-center m-5 text-white ">
+            <li><a class="hover:underline cursor-pointer" href="./index.html">Home</a></li>
+            <li><a class="hover:underline cursor-pointer" href="./index.html">New Arrival</a></li>
+            <li><a class="hover:underline cursor-pointer" href="./index.html">Most Wanted</a></li>
+            <li><a class="hover:underline cursor-pointer" href="./collection.html">Collections</a></li>
+            <li><a class="hover:underline cursor-pointer" href="./contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <!-- creating a selecting section -->
+    <section>
+        <div class="flex">
+            <div class="w-auto md:w-3/12 lg:m-5 lg:mt-10" id="checkbox">
+                <div>
+                    <h1 class="text-lg lg:text-4xl font-black m-5">Occasion</h1>
+                    <div class="m-5 text-base lg:text-3xl">
+                        <input type="checkbox" value="Summer" id="summercheck"> Summer
+                        <br>
+                        <input type="checkbox" value="Party" id="partycheck"> Party
+                        <br>
+                        <input type="checkbox" value="Beach" id="beachcheck"> Beach
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-lg lg:text-4xl font-black m-5">Colors</h1>
+                    <div class="m-5 text-base lg:text-3xl">
+                        <input type="checkbox" value="Red" id="red"> Red
+                        <br>
+                        <input type="checkbox" value="Blue" id="blue"> Blue
+                        <br>
+                        <input type="checkbox" value="White" id="white"> White
+                        <br>
+                        <input type="checkbox" value="Green" id="green"> Green
+                        <br>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-lg lg:text-4xl font-black m-5">Arrivals</h1>
+                    <div class="m-5 text-base lg:text-3xl">
+                        <input type="checkbox" value="New" id="new"> New
+                        <br>
+                        <input type="checkbox" value="Old" id="old"> Old
+                    </div>
+                </div>
+            </div>
+    
+            <div class="flex justify-center mx-3">
+                <hr class="border-black border-l-2 h-auto">
+            </div>
+    
+            <!-- creating searchbar -->
+            <div class="w-full">
+                <div class="m-5 mt-5 flex justify-center">
+                    <input id="searchbox" class="w-full p-2 border-2 border-black rounded-xl relative" type="text"
+                        placeholder="Search">
+                </div>
+    
+                <!-- creating production section -->
+                <section>
+                    <div class="flex flex-wrap gap-1 justify-around">
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col summercheck new green">
+                            <img src="./images/product1.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image1">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Summer Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹220</p>
+                        </div>
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col partycheck new red">
+                            <img src="./images/product2.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image2">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Party Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹260</p>
+                        </div>
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col beachcheck new white">
+                            <img src="./images/product3.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image2">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Beach Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹399</p>
+                        </div>
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col summercheck new green">
+                            <img src="./images/product4.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image2">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Summer Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹399</p>
+                        </div>
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col beachcheck new red">
+                            <img src="./images/product5.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image2">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Beach Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹579</p>
+                        </div>
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col partycheck new blue">
+                            <img src="./images/product6.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image2">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Party Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹579</p>
+                        </div>
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col partycheck old red">
+                            <img src="./images/product7.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image2">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Party T-Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹399</p>
+                        </div>
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col beachcheck old white">
+                            <img src="./images/product8.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image2">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Beach T-Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹579</p> 
+                        </div>
+                        <div class="product w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96 flex flex-col summercheck old white">
+                            <img src="./images/product9.jpg" class="w-40 md:w-48 lg:w-60 xl:w-72 2xl:w-96" alt="This is product image2">
+                            <h1 class="py-2 font-black text-sm md:text-base lg:text-xl xl:text-2xl">Summer T-Shirt</h1>
+                            <p class="pb-2 text-sm md:text-base xl:text-lg">₹220</p>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    
+    </div>
+    </section>
+    
+    <!-- creating new letter section -->
+    <section>
+        <div class="text-center m-5 sm:m-10 lg:m-20">
+            <h1 class="font-black text-xs sm:text-xl md:text-3xl lg:text-5xl pb-1 sm:pb-1">Join our News Letter</h1>
+            <p class="text-xs sm:text-base md:text-lg lg:text-4xl pb-1 sm:pb-1">Signup for our email newspaper to get exclusive discounts,
+                updates, and more</p>
+            <input type="text" class="border-black border-2 border-solid m-1 w-11/12 p-2"><br>
+            <button
+                class="text-white bg-black rounded-xl text-xs sm:text-base md:text-2xl lg:3xl p-2 mt-1 sm:mt-3 cursor-default">Subscribe
+                <b>→</b></button>
+        </div>
+    </section>
+
+    <!-- creating footer section -->
+    <footer>
+        <div class="bg-gray-900 p-10">
+            <h1 class="text-base sm:text-xl md:text-2xl lg:text-5xl text-white font-black">Nostra</h1>
+            <p class="text-xs sm:text-lg md:text-xl lg:text-4xl lg:my-3 text-white">The Standard chunk of Lorem ipsum used
+                since the 1500s is reproduced
+                below for those interest</p>
+            <div class="lg:px-3 lg:py-2 pt-1 sm:m-1 sm:p-3">
+                <i class="fa-brands fa-instagram text-base sm:text-lg md:text-xl lg:text-5xl text-white pr-10 pl-5 sm:pr-16"></i>
+                <i class="fa-brands fa-x-twitter text-base sm:text-lg md:text-xl lg:text-5xl text-white pr-10 pl-5 sm:pr-16"></i>
+                <i class="fa-brands fa-facebook text-base sm:text-lg md:text-xl lg:text-5xl text-white pr-10 pl-5 sm:pr-16"></i>
+            </div>
+            <p class="text-white text-sm sm:text-base md:text-xl  lg:text-3xl">@ 2023 Nostra.com</p>
+        </div>
+    </footer>
+
+    <script src="./collection.js"></script>
+
+</body>
+
+</html>

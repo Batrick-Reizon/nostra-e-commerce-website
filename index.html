@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nostra</title>
+</head>
+
+<body class="font-serif">
+
+    <div id="close" class="bg-black text-white p-3 text-xs sm:text-xl flex justify-evenly items-center">
+        <p>Sign Up and <b>GEt 20% OFF</b> for your first Order</p>
+        <i id="exitbutton" class="fa-solid fa-xmark cursor-pointer"></i>
+    </div>
+
+    <!-- creating navbar inside that creating h1 tag and ul tag inside ul tag creating li tag list as home,new arrival,most wanted,collections,contact us -->
+    <nav class="flex justify-between pl-5 p-2 items-center sticky top-0 bg-white z-20">
+        <h1 class="text-2xl font-black">Nostra</h1>
+        <svg id="menubar" class="flex md:hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="20" height="20" viewBox="0 0 50 50">
+            <path
+                d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+            </path>
+        </svg>
+        <ul class="hidden md:flex gap-10 items-center md:text-lg pr-10">
+            <li><a class="hover:underline cursor-pointer" href="./index.html">Home</a></li>
+            <li id="new" class="hover:underline cursor-pointer">New Arrival</li>
+            <li id="most" class="hover:underline cursor-pointer">Most Wanted</li>
+            <li><a class="hover:underline cursor-pointer" href="./collection.html">Collections</a></li>
+            <li><a class="hover:underline cursor-pointer" href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- creating sidebar section -->
+    <section id="sidebar" class="bg-black md:hidden fixed z-20 top-0 transition-all duration-1000"
+        style="height: 100vh; width: 50%; left: -50%;">
+        <div class="text-right p-10">
+            <i id="cancel" class="fa-solid fa-xmark hover:text-red-700 cursor-pointer text-white"></i>
+        </div>
+        <ul class=" flex flex-col gap-10 items-center m-5 text-white ">
+            <li><a class="hover:underline cursor-pointer" href="./index.html">Home</a></li>
+            <li id="news" class="hover:underline cursor-pointer">New Arrival</li>
+            <li id="mosts" class="hover:underline cursor-pointer">Most Wanted</li>
+            <li><a class="hover:underline cursor-pointer" href="./collection.html">Collections</a></li>
+            <li><a class="hover:underline cursor-pointer" href="./contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <!-- creating header and inside that header insert image and adding text inside that image using position -->
+    <header>
+        <div class="relative bg-black rounded-lg m-5">
+            <img class="rounded-lg opacity-70 w-full" style="height: 35vw;" src="./images/slider.jpg" alt="This is a slider image">
+            <h1 class="absolute top-1/3 left-20 text-xl sm:left-28 sm:text-3xl md:top-1/4 md:left-32 lg:top-1/4 lg:left-44 xl:left-52 2xl:left-56 text-white md:text-4xl lg:text-5xl xl:text-6xl 2xl:top-36 2xl:text-7xl font-black">Level up your style with our</h1>
+        <h4 class="absolute top-1/2 text-sm left-1/4 ml-10 sm:left-1/3 md:top-1/3 md:mt-4 md:left-1/3 md:ml-10 lg:top-1/4 lg:mt-16 lg:left-1/3 lg:ml-20 xl:mt-20 xl:ml-32 2xl:ml-40 text-white md:text-base xl:text-lg font-black">Summer Collections</h4>
+        <button
+            class="absolute top-1/2 mt-5 left-1/3 ml-8 text-sm sm:ml-16 md:top-1/2 md:left-1/3 md:ml-14 lg:top-1/4 lg:mt-24 lg:left-1/3 lg:ml-24 xl:mt-28 xl:ml-40 2xl:ml-48 p-1 lg:p-2 lg:px-5 cursor-pointer hover:bg-gray-200  text-black bg-white">Shop
+            Now <b>→</b></button>
+        <i class="fa-solid fa-arrow-left top-1/2 left-5 text-xl lg:top-1/3 lg:mt-10 lg:left-10 lg:text-8xl 2xl:text-9xl text-white absolute"></i>
+        <i class="fa-solid fa-arrow-right top-1/2 right-5 text-xl lg:top-1/3 lg:mt-10 lg:right-10 lg:text-8xl 2xl:text-9xl text-white absolute"></i>
+        </div>
+        
+    </header>
+
+    <!-- creating brand in this section inside that there are many div in that div have image and text  -->
+    <section>
+        <h3 class="font-black text-2xl lg:text-3xl sm:mt-3 pl-5 pt-5 lg:p-5">Brands</h3>
+        <div class="flex flex-none gap-3 justify-between ml-5 mt-5 sm:m-5">
+            <div class="flex flex-col items-center">
+                <img class="w-8 lg:w-16" src="./images/puma.png" alt="This is puma image">
+                <p class="text-sm lg:text-3xl pt-1 font-medium">Puma</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-8 lg:w-16" src="./images/adidas.png" alt="This is adidas image">
+                <p class="text-sm lg:text-3xl pt-1 font-medium">Adidas</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-8 lg:w-16" src="./images/simple.png" alt="This is simple image">
+                <p class="text-sm lg:text-3xl pt-1 font-medium">Simple</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-8 lg:w-16" src="./images/leaves.png" alt="This is leaves image">
+                <p class="text-sm lg:text-3xl pt-1 font-medium">Leaves</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-8 lg:w-16" src="./images/behance.png" alt="This is behance image">
+                <p class="text-sm lg:text-3xl pt-1 font-medium">Behance</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-8 lg:w-16" src="./images/twitch.png" alt="This is twitch image">
+                <p class="text-sm lg:text-3xl pt-1 font-medium">Twitch</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-8 lg:w-16" src="./images/leaves.png" alt="This is leaves image">
+                <p class="text-sm lg:text-3xl pt-1 font-medium">Leaves</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- creating services section in that having what services provided -->
+    <section>
+        <div class="sm:m-5 lg:pt-10">
+            <div class="flex items-center justify-between md:mt-10 lg:mb-7">
+                <div class="flex flex-col flex-none m-5 sm:m-0">
+                    <h1 class="text-xs sm:text-lg md:text-xl lg:text-4xl font-black">We Provide Best</h1>
+                    <h1 class="text-xs sm:text-lg md:text-xl lg:text-4xl font-black">Customer Experiences</h1>
+                </div>
+                <div class="flex m-3">
+                    <p class="text-xs sm:text-sm md:text-lg lg:text-2xl">|| We ensure that our customer have the best
+                        shopping experience</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center md:flex-nowrap md:justify-between">
+                <div class="bg-gray-200 inline-block m-1 w-84 p-2 sm:p-2 md:p-3 rounded-md">
+                    <i class="fa-regular fa-circle-check text-lg sm:xl md:3xl lg:text-5xl"></i>
+                    <h4 class="pt-2 text-sm lg:text-xl font-black">Original Products</h4>
+                    <p class="text-xs lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                        consequuntur.</p>
+                </div>
+                <div class="bg-gray-200 inline-block m-1 w-84 p-2 sm:p-2 md:p-3 rounded-md">
+                    <i class="fa-regular fa-face-smile text-base sm:xl md:3xl lg:text-5xl"></i>
+                    <h4 class="pt-2 text-sm lg:text-xl font-black">Satisfaction Guarantee</h4>
+                    <p class="text-xs lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                        consequuntur.</p>
+                </div>
+                <div class="bg-gray-200 inline-block m-1 w-84 p-2 sm:p-2 md:p-3 rounded-md">
+                    <i class="fa-solid fa-broom text-base sm:xl md:3xl lg:text-5xl"></i>
+                    <h4 class="pt-2 text-sm lg:text-xl font-black">New Arrival Everyday</h4>
+                    <p class="text-xs lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                        consequuntur.</p>
+                </div>
+                <div class="bg-gray-200 inline-block m-1 w-84 p-2 sm:p-2 md:p-3 rounded-md">
+                    <i class="fa-solid fa-truck-fast text-base sm:xl md:3xl lg:text-5xl"></i>
+                    <h4 class="pt-2 text-sm lg:text-xl font-black">Fast & Free Shipping</h4>
+                    <p class="text-xs lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                        consequuntur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- creating new arrival section in that section the each div contains image with in the image inside the text have using position method -->
+    <section id="newarrival">
+        <h1 class="font-black text-xl md:text-2xl lg:text-3xl m-5 sm:mt-10 lg:mt-20 lg:mb-1">New Arrivals</h1>
+        <div class="flex justify-between mx-5">
+            <div class="relative bg-black w-28 sm:w-36 md:w-40 xl:w-72 lg:w-60 lg:mt-10 rounded-lg">
+                <img class="opacity-40 rounded-lg w-28 sm:w-36 md:w-40 xl:w-72 lg:w-60" src="./images/new1.jpg"
+                    alt="This is new product image1">
+                <p
+                    class="absolute top-1/2 left-4 sm:top-1/2 sm:left-8 md:top-1/2 md:left-9 lg:top-1/2 lg:left-12 xl:left-14 p-1 text-xs rounded-lg bg-white sm:py-1 px-1 md:py-2 md:px-2 lg:py-2 lg:px-4 xl:px-6 xl:py-3 lg:text-xl xl:text-xl cursor-pointer">
+                    Shop Now <b>→</b></p>
+            </div>
+            <div class="relative bg-black w-28 sm:w-36 md:w-40 xl:w-72 lg:w-60 lg:mt-10 rounded-lg">
+                <img class="opacity-40 rounded-lg w-28 sm:w-36 md:w-40 xl:w-72 lg:w-60" src="./images/new2.jpg"
+                    alt="This is new product image1">
+                <p
+                    class="absolute top-1/2 left-4 sm:top-1/2 sm:left-8 md:top-1/2 md:left-9 lg:top-1/2 lg:left-12 xl:left-14 p-1 text-xs rounded-lg bg-white sm:py-1 px-1 md:py-2 md:px-2 lg:py-2 lg:px-4 xl:px-6 xl:py-3 lg:text-xl xl:text-xl cursor-pointer">
+                    Shop Now <b>→</b></p>
+            </div>
+            <div class="relative bg-black w-28 sm:w-36 md:w-40 xl:w-72 lg:w-60 lg:mt-10 rounded-lg">
+                <img class="opacity-40 rounded-lg w-28 sm:w-36 md:w-40 xl:w-72 lg:w-60" src="./images/new3.jpg"
+                    alt="This is new product image1">
+                <p
+                    class="absolute top-1/2 left-4 sm:top-1/2 sm:left-8 md:top-1/2 md:left-9 lg:top-1/2 lg:left-12 xl:left-14 p-1 text-xs rounded-lg bg-white sm:py-1 px-1 md:py-2 md:px-2 lg:py-2 lg:px-4 xl:px-6 xl:py-3 lg:text-xl xl:text-xl cursor-pointer">
+                    Shop Now <b>→</b></p>
+            </div>
+            <div class="relative bg-black w-28 sm:w-36 md:w-40 xl:w-72 lg:w-60 lg:mt-10 rounded-lg">
+                <img class="opacity-40 rounded-lg w-28 sm:w-36 md:w-40 xl:w-72 lg:w-60" src="./images/new4.jpg"
+                    alt="This is new product image1">
+                <p
+                    class="absolute top-1/2 left-4 sm:top-1/2 sm:left-8 md:top-1/2 md:left-9 lg:top-1/2 lg:left-12 xl:left-14 p-1 text-xs rounded-lg bg-white sm:py-1 px-1 md:py-2 md:px-2 lg:py-2 lg:px-4 xl:px-6 xl:py-3 lg:text-xl xl:text-xl cursor-pointer">
+                    Shop Now <b>→</b></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- creating most wanted section -->
+    <section id="mostwanted">
+        <h1 class="font-black text-xl md:text-2xl lg:text-3xl mx-5 mt-5 sm:mt-10 lg:mt-20 lg:mb-5">Most Wanted</h1>
+        <div class="flex overflow-auto">
+            <div class="relative m-5 w-28 sm:w-40 md:w-60 lg:w-80 flex-none">
+                <img class="rounded-lg w-80" src="./images/most1.jpg" alt="This is most wanted image1">
+                <p
+                    class="bg-red-600 inline-block p-1 sm:px-1 md:px-3 lg:px-5 text-xs sm:text-base md:text-2xl lg:text-3xl absolute top-1 left-1 text-white rounded-lg">
+                    Sale</p>
+                <img class="blackheart w-4 sm:w-6 md:w-8 lg:w-10 absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/blackheart.png" alt="This is blackheart image">
+                <img class="redheart w-4 sm:w-6 md:w-8 lg:w-10 hidden absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/redheart.png" alt="This is redheart image">
+            </div>
+            <div class="relative m-5 w-28 sm:w-40 md:w-60 lg:w-80 flex-none">
+                <img class="rounded-lg w-80" src="./images/most2.jpg" alt="This is most wanted image1">
+                <p
+                    class="bg-red-600 inline-block p-1 sm:px-1 md:px-3 lg:px-5 text-xs sm:text-base md:text-2xl lg:text-3xl absolute top-1 left-1 text-white rounded-lg">
+                    Sale</p>
+                <img class="blackheart w-4 sm:w-6 md:w-8 lg:w-10 absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/blackheart.png" alt="This is blackheart image">
+                <img class="redheart w-4 sm:w-6 md:w-8 lg:w-10 hidden absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/redheart.png" alt="This is redheart image">
+            </div>
+            <div class="relative m-5 w-28 sm:w-40 md:w-60 lg:w-80 flex-none">
+                <img class="rounded-lg w-80" src="./images/most3.jpg" alt="This is most wanted image1">
+                <p
+                    class="bg-red-600 inline-block p-1 sm:px-1 md:px-3 lg:px-5 text-xs sm:text-base md:text-2xl lg:text-3xl absolute top-1 left-1 text-white rounded-lg">
+                    Sale</p>
+                <img class="blackheart w-4 sm:w-6 md:w-8 lg:w-10 absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/blackheart.png" alt="This is blackheart image">
+                <img class="redheart w-4 sm:w-6 md:w-8 lg:w-10 hidden absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/redheart.png" alt="This is redheart image">
+            </div>
+            <div class="relative m-5 w-28 sm:w-40 md:w-60 lg:w-80 flex-none">
+                <img class="rounded-lg w-80" src="./images/most4.jpg" alt="This is most wanted image1">
+                <p
+                    class="bg-red-600 inline-block p-1 sm:px-1 md:px-3 lg:px-5 text-xs sm:text-base md:text-2xl lg:text-3xl absolute top-1 left-1 text-white rounded-lg">
+                    Sale</p>
+                <img class="blackheart w-4 sm:w-6 md:w-8 lg:w-10 absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/blackheart.png" alt="This is blackheart image">
+                <img class="redheart w-4 sm:w-6 md:w-8 lg:w-10 hidden absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/redheart.png" alt="This is redheart image">
+            </div>
+            <div class="relative m-5 w-28 sm:w-40 md:w-60 lg:w-80 flex-none">
+                <img class="rounded-lg w-80" src="./images/most5.jpg" alt="This is most wanted image1">
+                <p
+                    class="bg-red-600 inline-block p-1 sm:px-1 md:px-3 lg:px-5 text-xs sm:text-base md:text-2xl lg:text-3xl absolute top-1 left-1 text-white rounded-lg">
+                    Sale</p>
+                <img class="blackheart w-4 sm:w-6 md:w-8 lg:w-10 absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/blackheart.png" alt="This is blackheart image">
+                <img class="redheart w-4 sm:w-6 md:w-8 lg:w-10 hidden absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/redheart.png" alt="This is redheart image">
+            </div>
+            <div class="relative m-5 w-28 sm:w-40 md:w-60 lg:w-80 flex-none">
+                <img class="rounded-lg w-80" src="./images/most6.jpg" alt="This is most wanted image1">
+                <p
+                    class="bg-red-600 inline-block p-1 sm:px-1 md:px-3 lg:px-5 text-xs sm:text-base md:text-2xl lg:text-3xl absolute top-1 left-1 text-white rounded-lg">
+                    Sale</p>
+                <img class="blackheart w-4 sm:w-6 md:w-8 lg:w-10 absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/blackheart.png" alt="This is blackheart image">
+                <img class="redheart w-4 sm:w-6 md:w-8 lg:w-10 hidden absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/redheart.png" alt="This is redheart image">
+            </div>
+            <div class="relative m-5 w-28 sm:w-40 md:w-60 lg:w-80 flex-none">
+                <img class="rounded-lg w-80" src="./images/most7.jpg" alt="This is most wanted image1">
+                <p
+                    class="bg-red-600 inline-block p-1 sm:px-1 md:px-3 lg:px-5 text-xs sm:text-base md:text-2xl lg:text-3xl absolute top-1 left-1 text-white rounded-lg">
+                    Sale</p>
+                <img class="blackheart w-4 sm:w-6 md:w-8 lg:w-10 absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/blackheart.png" alt="This is blackheart image">
+                <img class="redheart w-4 sm:w-6 md:w-8 lg:w-10 hidden absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/redheart.png" alt="This is redheart image">
+            </div>
+            <div class="relative m-5 w-28 sm:w-40 md:w-60 lg:w-80 flex-none">
+                <img class="rounded-lg w-80" src="./images/most8.jpg" alt="This is most wanted image1">
+                <p
+                    class="bg-red-600 inline-block p-1 sm:px-1 md:px-3 lg:px-5 text-xs sm:text-base md:text-2xl lg:text-3xl absolute top-1 left-1 text-white rounded-lg">
+                    Sale</p>
+                <img class="blackheart w-4 sm:w-6 md:w-8 lg:w-10 absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/blackheart.png" alt="This is blackheart image">
+                <img class="redheart w-4 sm:w-6 md:w-8 lg:w-10 hidden absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:right-5 md:bottom-5 lg:bottom-3 lg:right-3 cursor-pointer text-lg"
+                    src="./images/redheart.png" alt="This is redheart image">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- creating offer section -->
+    <section>
+        <div class="bg-black flex justify-center p-5 m-5">
+            <div class="flex justify-between items-center">
+                <div class="flex flex-nowrap">
+                    <img src="./images/offer.jpg" alt="This is offer image" style="width:500px;">
+                </div>
+                <div class="py-8 px-5 sm:px-6 md:px-8 lg:px-10">
+                    <h1 class="text-white text-xs sm:text-xl md:text3xl lg:text-5xl font-black pb-1">Limited Offer</h1>
+                    <h4 class="text-white text-xs sm:text-lg md:text-xl lg:text-3xl pb-1 font-medium">35% Off on this
+                        for this first 30 Customers</h4>
+                    <button
+                        class="text-black text-xs bg-white sm:text-sm md:text-base lg:text-2xl p-1 mt-3 rounded-md">Shop
+                        Now <b>→</b></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- creating new letter section -->
+    <section>
+        <div class="text-center m-5 sm:m-10 lg:m-20">
+            <h1 class="font-black text-xs sm:text-xl md:text-3xl lg:text-5xl pb-1 sm:pb-1">Join our News Letter</h1>
+            <p class="text-xs sm:text-base md:text-lg lg:text-4xl pb-1 sm:pb-1">Signup for our email newspaper to get
+                exclusive discounts,
+                updates, and more</p>
+            <input type="text" class="border-black border-2 border-solid m-1 w-11/12 p-2"><br>
+            <button
+                class="text-white bg-black rounded-xl text-xs sm:text-base md:text-2xl lg:3xl p-2 mt-1 sm:mt-3 cursor-default">Subscribe
+                <b>→</b></button>
+        </div>
+    </section>
+
+
+    <!-- creating footer section -->
+    <footer>
+        <div class="bg-gray-900 p-10">
+            <h1 class="text-base sm:text-xl md:text-2xl lg:text-5xl text-white font-black">Nostra</h1>
+            <p class="text-xs sm:text-lg md:text-xl lg:text-4xl lg:my-3 text-white">The Standard chunk of Lorem ipsum
+                used
+                since the 1500s is reproduced
+                below for those interest</p>
+            <div class="lg:px-3 lg:py-2 pt-1 sm:m-1 sm:p-3">
+                <i
+                    class="fa-brands fa-instagram text-base sm:text-lg md:text-xl lg:text-5xl text-white pr-10 pl-5 sm:pr-16"></i>
+                <i
+                    class="fa-brands fa-x-twitter text-base sm:text-lg md:text-xl lg:text-5xl text-white pr-10 pl-5 sm:pr-16"></i>
+                <i
+                    class="fa-brands fa-facebook text-base sm:text-lg md:text-xl lg:text-5xl text-white pr-10 pl-5 sm:pr-16"></i>
+            </div>
+            <p class="text-white text-sm sm:text-base md:text-xl  lg:text-3xl">@ 2023 Nostra.com</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
