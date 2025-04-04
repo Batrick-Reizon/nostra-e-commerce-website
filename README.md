@@ -20,6 +20,6 @@ Nostra is a modern and responsive e-commerce website built using HTML, Tailwind 
 
 ## How to View
 
-You can access my Nostra website by visiting  https://jence-john.github.io/Nostra-E-Commerce-Website/ . Feel free to explore the content and get in touch!
+You can access my Nostra website by visiting https://batrick-reizon.github.io/nostra-e-commerce-website/. Feel free to explore the content and get in touch!
 
 Thank you for visiting my Nostra website!
