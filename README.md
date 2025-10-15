@@ -9,9 +9,9 @@ Nostra is a modern and responsive e-commerce website built using **HTML, Tailwin
 -  Stylish and modern UI built with Tailwind CSS
 
 ## Tech Stack
-- HTML5
-- Tailwind CSS
-- JavaScript
+- **HTML5**
+- **Tailwind CSS**
+- **JavaScript**
 
 ## How to View
 You can access my Nostra website by visiting https://batrick-reizon.github.io/nostra-e-commerce-website/. Feel free to explore the content and get in touch!
